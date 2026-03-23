@@ -1,0 +1,189 @@
+{
+  "profiles": {
+    "full": ["login", "group", "mailbox", "bounty", "quest", "scrimmage"],
+    "login": ["login"],
+    "shop": ["shop"],
+    "task": ["tasks"],
+    "cafe": ["cafe"]
+  },
+
+  "plans": {
+    "bounty": {
+      "planA": [
+        { 
+          "location": "highway",   
+          "stage": 10, 
+          "runs": 6 
+        }
+      ],
+
+      "planB": [
+        { 
+          "location": "railway",
+          "stage": 10,
+          "runs": 6 
+        }
+      ],
+
+      "planC": [
+        { 
+          "location": "classroom",
+          "stage": 10,
+          "runs": 6 
+        }
+      ],
+
+      "planD": [
+        { 
+          "location": "highway",
+          "stage": 10,
+          "runs": 2 
+        },
+        { 
+          "location": "railway",
+          "stage": 10, 
+          "runs": 2 
+        },
+        { 
+          "location": "classroom", 
+          "stage": 10, 
+          "runs": 2
+        }
+      ]
+    },
+
+    "quest": {
+      "planA": [
+        { 
+          "location": "hard", 
+          "stage": 293, 
+          "runs": 3 
+        }
+      ]
+    },
+
+    "scrimmage": {
+      "planA": [
+        { 
+          "location": "Trinity",    
+          "stage": 4, 
+          "runs": 6 
+        }
+      ],
+
+      "planB": [
+        { 
+          "location": "Gehenna",    
+          "stage": 4, 
+          "runs": 6 
+        }
+      ],
+      
+      "planC": [
+        { 
+          "location": "Millennium",
+          "stage": 4, 
+          "runs": 6 
+        }
+      ],
+
+      "planD": [
+        { 
+          "location": "Trinity",    
+          "stage": 4, 
+          "runs": 2 
+        },
+        { 
+          "location": "Gehenna",    
+          "stage": 4, 
+          "runs": 2 
+        },
+        { 
+          "location": "Millennium", 
+          "stage": 4, 
+          "runs": 2 
+        }
+      ]
+    },
+
+    "shop": {
+      "planA":[
+        {
+          "location": "credits",
+          "slots": [16, 17, 18, 19, 20, 21, 22, 23],
+          "refresh": 0
+        },
+        { 
+          "location": "tactical_coin",
+          "slots": [6, 7],
+          "refresh": 1
+        }
+      ],
+
+      "planB":[
+        {
+          "location": "credits",
+          "slots": [12, 13, 14, 15],
+          "refresh": 0
+        }
+      ],
+
+      "planC":[
+        { 
+          "location": "tactical_coin",
+          "slots": [6, 7],
+          "refresh": 1
+        }
+      ]
+    }
+  },
+
+  "actions": {
+    "login": { 
+      "type": "login"
+    },
+
+    "bounty": { 
+      "type": "sweep", 
+      "mode": "bounty",    
+      "plan": "planC"
+    },
+    
+    "quest": { 
+      "type": "sweep", 
+      "mode": "quest",     
+      "plan": "planA"
+    },
+
+    "scrimmage": { 
+      "type": "sweep", 
+      "mode": "scrimmage", 
+      "plan": "planC"
+    },
+
+    "shop": { 
+      "type": "shop",  
+      "plan": "planC"
+    },
+
+    "group": {
+      "type": "claim",
+      "mode": "group"      
+    },
+
+    "mailbox": {
+      "type": "claim",
+      "mode": "mailbox"
+    },
+
+    "tasks": {
+      "type": "claim",
+      "mode": "tasks"
+    },
+
+    "cafe": {
+      "type": "claim",
+      "mode": "cafe"
+    }
+  }
+}
