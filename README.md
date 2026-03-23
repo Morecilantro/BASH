@@ -1,1 +1,2 @@
-# BASH
+# BlueArchiveSipmleHelper
+一个基于opencv的简易碧蓝档案日常辅助程序
